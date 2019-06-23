@@ -1,18 +1,41 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+
+
+
+
+    <h1>{{ message }}</h1>
+    <div v-for="meditation in meditations">
+      <img v-bind:src="meditation.image_url" alt="">
+ 
+      <h3>Title: {{meditation.title}}</h3>
+      <p>Practice: {{meditation.practice}}</p>
+      <p>Length: {{meditation.length}}</p>
+    </div>
+      
+
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<style>
+</style>
 
+<script>
+import axios from "axios";
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
-}
+  data: function() {
+    return {
+      message: "Mind Warrior!",
+      meditations: []
+    };
+  },
+  created: function() {
+    axios.get("/api/meditations").then(response => {
+      this.meditations = response.data;
+    });
+  },
+  methods: {}
+};
 </script>
+
