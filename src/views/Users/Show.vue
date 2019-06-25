@@ -36,6 +36,7 @@ export default {
     destroy: function(user) {
       axios.delete("/api/users/" + this.$route.params.id).then(response => {
         console.log(response.data);
+        this.$router.push("/");
       });
     }
   }
