@@ -1,7 +1,7 @@
 <template>
   <div class="users-show">
 
-    <h1>{{ user.first_name }} {{ user.last_name}}</h1>
+    <h1>Name: {{user.first_name}} {{user.last_name}}</h1>
     <h2>Email: {{ user.email }}</h2>
 
     <button class="btn btn-warning">
@@ -20,6 +20,9 @@ export default {
   data: function() {
     return {
       user: {},
+      first_name: "",
+      last_name: "",
+      email: "",
       errors: []
     };
   },
@@ -33,7 +36,7 @@ export default {
     destroy: function(user) {
       axios.delete("/api/users/" + this.$route.params.id).then(response => {
         console.log(response.data);
-      })
+      });
     }
   }
 };
