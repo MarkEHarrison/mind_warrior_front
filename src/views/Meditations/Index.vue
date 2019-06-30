@@ -6,7 +6,7 @@
       <h2>{{ meditation.title }}</h2>
       <p>Practice: {{ meditation.practice }}</p>
       <p>Length: {{ meditation.length }}</p>
-      <button class="button play" @click.prevent="playSound('sound_url')"><span class="fa fa-play-circle-o"></span></button> 
+      <button class="button play" @click.prevent="playSound('https://res.cloudinary.com/dcmo9tfmu/video/upload/v1561911274/Mindfulness%20of%20Breath/FreeMindfulness3MinuteBreathing_3_y3p8yz.mp3')"><span class="fa fa-play-circle-o"></span></button> 
     </div>
 
 
@@ -33,6 +33,7 @@ export default {
       if (sound) {
         var audio = new Audio(sound);
         audio.play();
+        
       }
     },
     
