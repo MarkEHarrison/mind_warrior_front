@@ -3,6 +3,8 @@
 
     <h1>Name: {{user.first_name}} {{user.last_name}}</h1>
     <h2>Email: {{ user.email }}</h2>
+    
+
 
     <button class="btn btn-warning">
       <router-link v-bind:to="'/users/' + user.id + '/edit'">Edit</router-link>

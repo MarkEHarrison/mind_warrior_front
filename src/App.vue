@@ -7,8 +7,9 @@
       <router-link to="/login">Login</router-link> |
       <router-link to="/logout">Logout</router-link> |
       <router-link to="/users/:id">User Show</router-link> |
-      <router-link :to="'/users/:id/edit'">Edit Profile</router-link> | 
-      <router-link to="/">Meditations Index</router-link> 
+      <router-link to="/users/:id/edit">Edit Profile</router-link> | 
+      <router-link to="/meditations">Meditations Index </router-link> |
+      <router-link to="/articles">Articles Index</router-link> 
     </div>
     <router-view/>
   </div>

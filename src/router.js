@@ -10,8 +10,11 @@ import Logout from "./views/Users/Logout.vue";
 import UsersShow from './views/Users/Show.vue';
 import UsersEdit from './views/Users/Edit.vue';
 
+
 // Meditation Routes
 import MeditationsIndex from "./views/Meditations/Index.vue";
+
+import ArticlesIndex from './views/NewsAPI/Index.vue';
 
 
 
@@ -58,9 +61,15 @@ export default new Router({
     // Meditations
 
     {
-      path: '/',
+      path: '/meditations',
       name: 'meditations-index',
       component: MeditationsIndex
+    },
+
+    {
+      path: '/articles',
+      name: 'articles-index',
+      component: ArticlesIndex
     },
 
   ]
