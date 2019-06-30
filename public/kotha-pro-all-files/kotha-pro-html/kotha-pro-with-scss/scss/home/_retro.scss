@@ -1,0 +1,99 @@
+.kotha-retro {
+	background: url(assets/images/retro-bg.png) repeat;
+	.kotha-menu .menu-content {
+		position: relative;
+		padding: 0;
+		background-color: #da521e;
+		margin-left: 18px;
+		margin-right: 18px;
+		&::after, &::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			width: 0;
+			height: 0;
+			margin-top: -30px;
+			clear: both;
+		}
+		&::after {
+			left: -18px;
+			border-bottom: 30px solid #da521e;
+			border-left: 18px solid transparent;
+			border-top: 30px solid #da521e;
+		}
+		&::before {
+			right: -18px;
+			border-bottom: 30px solid #da521e;
+			border-right: 18px solid transparent;
+			border-top: 30px solid #da521e;
+		}
+		.navbar-nav > li {
+			float: none;
+			display: inline-block;
+			a {
+				color: #fff;
+				font-size: 13px;
+				font-family: $title-font-family;
+				font-weight: normal;
+				letter-spacing: 0.5px;
+			}
+			.dropdown-menu {
+				a {
+					background: $theme-brand-color;
+					color: #fff;
+					border: 0;
+					&:hover {
+						color: #fff;;
+						background: #af4218;
+					}
+				}
+			}
+		}
+	}
+	.navbar-nav .dropdown > a:after {
+		color: #fff;
+	}
+	.navbar-default {
+		background-color: transparent;
+		color: #fff;
+		border: 0;
+	}
+	.navbar-nav {
+		float: none;
+		margin: 0 auto;
+	}
+	.single-blog {
+		background: #ede9da;
+		margin-bottom: 50px;
+		border: 1px solid rgba(51, 51, 51, 0.1);
+		-webkit-box-shadow: 0 1px 1px rgba(51, 51, 51, 0.1);
+		-moz-box-shadow: 0 1px 1px rgba(51, 51, 51, 0.1);
+		box-shadow: 0 1px 1px rgba(51, 51, 51, 0.1);
+	}
+	.kotha-sidebar {
+		.widget {
+			background-color: #ede9da;
+			border: 1px solid rgba(51, 51, 51, 0.1);
+			-webkit-box-shadow: 0 1px 1px rgba(51, 51, 51, 0.1);
+			-moz-box-shadow: 0 1px 1px rgba(51, 51, 51, 0.1);
+			box-shadow: 0 1px 1px rgba(51, 51, 51, 0.1);
+			&.about-me-widget .social-share ul li a {
+				border: 1px solid #c9c2ad;
+				background: #c9c2ad;
+				color: #e7e2d2;
+				&:hover {
+					background: #da521e;
+					border-color: #da521e;
+					color: #fff;
+				}
+			}
+			&.news-letter-widget input[type="email"] {
+				color: #e7e2d2;
+				background: #c9c2ad;
+			}
+		}
+	}
+	.insta-feed {
+		background: #ede9da;
+	}
+}

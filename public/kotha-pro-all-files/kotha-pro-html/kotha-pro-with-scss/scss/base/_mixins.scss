@@ -1,0 +1,107 @@
+
+@mixin prefix($property, $value, $prefixes: ()) {
+	@each $prefix in $prefixes {
+		-#{$prefix}-#{$property}: $value;
+	}
+
+	#{$property}: $value;
+}
+@mixin border-radius($radius) {
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin add-border($size, $color, $position) {
+	@if $position == 'all' {
+		border: $size solid $color;
+	} @else if $position == 'top' {
+		border-top: $size solid $color;
+	} @else if $position == 'bottom' {
+		border-bottom: $size solid $color;
+	} @else if $position == 'right' {
+		border-right: $size solid $color;
+	} @else if $position == 'left' {
+		border-left: $size solid $color;
+	} @else if $position == 'top-bottom' {
+		border-top: $size solid $color;
+		border-bottom: $size solid $color;
+	} @else if $position == 'right-left' {
+		border-left: $size solid $color;
+		border-right: $size solid $color;
+	}
+}
+
+@mixin transition($time) {
+	-webkit-transition: all $time;
+	-moz-transition: all $time;
+	-ms-transition: all $time;
+	-o-transition: all $time;
+	transition: all $time;
+}
+
+@mixin black($opacity) {
+	background: rgba(0, 0, 0, $opacity);
+}
+@mixin brand-color($opacity) {
+	background: rgba(218, 82, 32, $opacity);
+}
+@mixin white($opacity) {
+	background: rgba(255, 255, 255, $opacity);
+}
+@mixin headline( $size: 24px, $color: $body-font-color, $lt-space: 0.5px) {
+	color: $color;
+	font-size: $size;
+	letter-spacing: $lt-space;
+}
+
+@mixin add-background($color) {
+	background: $color;
+}
+
+@mixin outline {
+	box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0, inset rgba(0, 0, 0, 0.75) 0 1px 0;
+}
+@mixin center-h($height) {
+	position: absolute;
+	top: 50%;
+	height: $height;
+	margin-top: -($height / 2);
+}
+@mixin position-absolute( $top: null, $right: null, $bottom: null, $left: null) {
+	position: absolute;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+@mixin center-both {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include prefix(transform, translate(-50%, -50%), 'webkit' 'ms');
+}
+@mixin icon( $fn-size, $h, $w,  $ln-h, $bd-color: $border-color, $fn-color: $icon-color, $br-r: 50%){
+	display: inline-block;
+	border: 1px solid $bd-color;
+	color: $fn-color;
+	font-size: $fn-size;
+	height: $h;
+	width: $w;
+	border-radius: $br-r;
+	line-height: $ln-h;
+}
+@mixin date() {
+	color: $blog-meta-color;
+	font-style: italic;
+	font-size: 14px;
+	margin-left: 0;
+}
+.post-cat {
+	color: #da521e;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}

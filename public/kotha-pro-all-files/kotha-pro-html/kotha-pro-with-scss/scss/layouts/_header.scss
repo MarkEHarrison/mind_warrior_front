@@ -1,0 +1,89 @@
+.kotha-logo {
+	h1 {
+		margin: 48px auto 55px;
+	}
+}
+
+#video-header {
+	width: 100%;
+	position: relative;
+	min-height: 450px;
+	margin-bottom: 0;
+}
+
+/*video background*/
+.yt-background {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	min-height: 500px;
+	&:after {
+		content: "";
+		background: rgba(0, 0, 0, 0.5);
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		z-index: -1;
+	}
+	.yt-controls {
+		position: absolute;
+		right: 60px;
+		bottom: 50px;
+		display: none;
+		a {
+			display: inline-block;
+			color: #fff;
+			width: 20px;
+			text-decoration: none;
+		}
+	}
+
+}
+
+#logo {
+	text-align: center;
+	padding: 0;
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	p {
+		color: #fff;
+		font-style: italic;
+		font-size: 18px;
+		letter-spacing: 0.5px;
+
+	}
+}
+
+/*img header bg*/
+
+#img-header {
+	min-height: 450px;
+	background: url(assets/images/header-fixed-bg.jpg) no-repeat scroll 100% 100%;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	&:after {
+		content: "";
+		@include black(0.4);
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		z-index: -1;
+	}
+}
+.header-top-area {
+	margin: 45px auto 10px;
+	.mega-logo {
+		padding: 30px 0;
+		display: block;
+	}
+}

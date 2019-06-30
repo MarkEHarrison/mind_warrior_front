@@ -1,0 +1,30 @@
+/*
+Kotha Pro
+Author: ShapedTheme
+Version: 2.0
+*/
+/* base common css*/
+@import 'scss/base/_variables.scss';
+@import 'scss/base/_mixins.scss';
+@import 'scss/base/_base.scss';
+/*_components css*/
+@import 'scss/modules/_components.scss';
+@import 'scss/modules/_forms.scss';
+/*nabvar css*/
+@import 'scss/layouts/_nav.scss';
+/*header css*/
+@import 'scss/layouts/_header.scss';
+/*footer css*/
+@import 'scss/layouts/_footer.scss';
+/*sidebar css*/
+@import 'scss/layouts/_sidebar.scss';
+/*all blog css */
+@import 'scss/layouts/_blog.scss';
+/* extra page css */
+@import 'scss/layouts/_extra-page.scss';
+@import 'scss/home/_retro.scss';
+@import 'scss/home/_marketing.scss';
+@import 'scss/home/_food.scss';
+@import 'scss/home/_megazine.scss';
+/*responsive css */
+@import 'scss/layouts/_mobile.scss';

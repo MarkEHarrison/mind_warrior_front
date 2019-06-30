@@ -1,0 +1,21 @@
+.join-now-area{
+	background: $theme-brand-color;
+	h2{
+		@include headline(24px, #fff, 0);
+		margin: 36px 0;
+		line-height: 50px;
+		.btn-join{
+			font-size: 20px;
+			font-family: $title-font-family-2;
+			line-height: 50px;
+			padding: 0  30px;
+			background: #fff;
+			color: $theme-brand-color;
+			margin-left: 28px;
+			border-radius: 30px;
+			&:hover{
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,90 @@
+body {
+	background: $body-background;
+	color: $body-font-color;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+}
+
+a {
+	color: $body-font-color;
+	text-decoration: none;
+	@include transition(0.33s);
+	line-height: 1.4;
+	&:hover {
+		color: $theme-brand-color;
+		text-decoration: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+	font-family: $title-font-family;
+	margin-top: 0;
+}
+html{
+	height: 100%;
+	width: 100%;
+}
+body.marketing,
+body.food,
+body.magazine-blog,
+.architecture-page {
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 700;
+		font-family: $title-font-family-2;
+	}
+}
+
+body.material-home {
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 500;
+		font-family: $title-font-family-3;
+	}
+}
+
+p {
+	font-size: $base-font-size;
+	line-height: 25px;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+input, textarea, button {
+	@include border-radius(0px);
+}
+
+img {
+	max-width: 100%;
+}
+
+select:focus, select:active, input:focus, input:active, textarea:focus, textarea:active, button:focus, button:active {
+	outline: none
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+	outline: none !important;
+}
+
+.form-control:focus {
+	box-shadow: none;
+	border-color: $theme-brand-color;
+}
+
+.no-gutter [class*='col-'] {
+	padding-right: 0;
+	padding-left: 0;
+	margin: 0;
+}
+.no-gutter.row{
+	margin: 0;
+}
+.media-left, .media > .pull-left {
+	padding-right: 15px;
+	float: left;
+}
