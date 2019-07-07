@@ -1,13 +1,21 @@
 <template>
 
   <div class="articles-index">
-    <h1>Articles</h1>
+    <h1>TOP HEADLINES</h1>
     <div v-for="article in articles">
       <h2>{{ article.source }}</h2>
       <p>Author: {{ article.author }}</p>
       <p>Tilte: {{ article.title }}</p>
       <p>Description: {{ article.description }}</p>
-      <p>GO TO: {{article.url}}</p>
+
+      <a target="_blank" rel="noopener noreferrer" v-bind:href="article.url">
+        <button class="btn-warning">
+          <p>GO TO STORY</p>
+        </button>
+      </a>
+      
+     
+
     </div>
 
 

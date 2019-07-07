@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+  
+   
+
     <div id="nav">
       <router-link to="/">Home</router-link> | 
       <router-link to="/about">About</router-link> |
@@ -9,13 +12,20 @@
       <router-link to="/users/:id">User Show</router-link> |
       <router-link to="/users/:id/edit">Edit Profile</router-link> | 
       <router-link to="/meditations">Meditations Index </router-link> |
-      <router-link to="/articles">Articles Index</router-link> 
+      <router-link to="/articles">Articles Index</router-link> |
+      <router-link to="/spotify_authorize">Sign In With Spotify</router-link>
     </div>
     <router-view/>
-  </div>
+ 
+
+  
+
+ 
+</div>
 </template>
 
 <style>
+
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

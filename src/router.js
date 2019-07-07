@@ -16,6 +16,8 @@ import MeditationsIndex from "./views/Meditations/Index.vue";
 
 import ArticlesIndex from './views/NewsAPI/Index.vue';
 
+import SpotifyIndex from './views/SpotifyIndex.vue';
+
 
 
 Vue.use(Router);
@@ -71,6 +73,14 @@ export default new Router({
       name: 'articles-index',
       component: ArticlesIndex
     },
+
+    {
+      path: '/spotify_authorize',
+      name: 'spotify-index',
+      component: SpotifyIndex
+    },
+
+
 
   ]
 });
