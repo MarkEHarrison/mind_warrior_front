@@ -3,6 +3,7 @@
 
     <h1>Name: {{user.first_name}} {{user.last_name}}</h1>
     <h2>Email: {{ user.email }}</h2>
+    <h2>Favorites: {{}}</h2>
     
 
 
