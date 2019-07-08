@@ -9,12 +9,11 @@
     <h1>Meditations</h1>
     <div v-for="meditation in meditations">
       <h2>{{ meditation.title }}</h2>
-      <!--  <p>{{meditation.sound_url}}</p> -->
       <p>Practice: {{ meditation.practice }}</p>
       <p>Length: {{ meditation.length }}</p>
       <button class="button play" @click.prevent="playSound(meditation.sound_url)">
         <span class="fa fa-play-circle-o"></span>
-      </button>
+      </button><br>
       <button class="button play" @click.prevent="toggleFavorite(meditation.id)">
         <span class="fa fa-play-circle-o"></span>
       </button>
