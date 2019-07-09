@@ -11,9 +11,11 @@
       <h2>{{ meditation.title }}</h2>
       <p>Practice: {{ meditation.practice }}</p>
       <p>Length: {{ meditation.length }}</p>
+      <p>Play</p>
       <button class="button play" @click.prevent="playSound(meditation.sound_url)">
         <span class="fa fa-play-circle-o"></span>
       </button><br>
+      <p>Favorite</p>
       <button class="button play" @click.prevent="toggleFavorite(meditation.id)">
         <span class="fa fa-play-circle-o"></span>
       </button>
@@ -46,6 +48,8 @@ export default {
     },
     toggleFavorite(medId) {
       console.log(medId);
+
+
       var params = {
         meditation_id: medId
          
@@ -60,6 +64,7 @@ export default {
           this.errors = error.response.data.errors;
         });
     }
+
   }
 };
 </script>

@@ -1,14 +1,20 @@
 <template>
   <div class="users-show">
-
+    {{user.meditations}}
     <h1>Name: {{user.first_name}} {{user.last_name}}</h1>
-    <h2>Email: {{ user.email }}</h2>
+    <h2>Email: {{ user.email }}</h2><br>
+    <h3>Favorites:</h3>
+
 
     <div v-for="meditation in user.meditations">
-    <h2>Favorites: {{meditation.title}}</h2>
-    <button class="button play" @click.prevent="playSound(meditation.sound_url)">
-        <span class="fa fa-play-circle-o"></span>
-      </button>
+    <h3> {{meditation.title}} </h3>
+    <p>play<button class="button play" @click.prevent="playSound(meditation.sound_url)">
+      <span class="fa fa-play-circle-o"></span>
+    </button></p><br>
+    <p>un-fav<button class="button play" @click.prevent="toggleFavorite(meditation.id)">
+      <span class="fa fa-play-circle-o"></span>
+    </button></p>
+      
     </div>
   
 
@@ -53,11 +59,27 @@ export default {
       });
     },
     playSound(sound) {
-      if (sound) {
+      // if (sound) {
         var audio = new Audio(sound);
         audio.play();
-      }
+      
     },
+
+    toggleFavorite(medId) {
+      console.log(medId);
+      axios
+        .delete("/api/user_meditations/" + medId)
+        .then(response => {
+          console.log(response.data);
+          var index = this.user.meditations.indexOf(medId);
+          this.user.meditations.splice(index, 1);
+        })
+        .catch(error => {
+          this.errors = error.response.data.errors;
+        });
+    }
   }
 };
 </script>
+
+<!-- if association exists a button to delete shows, if not a button to favorite -->

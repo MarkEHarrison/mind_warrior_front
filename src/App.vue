@@ -7,8 +7,10 @@
       <router-link to="/">Home</router-link> | 
       <router-link to="/about">About</router-link> |
       <router-link to="/signup">Signup</router-link> |
-      <router-link to="/login">Login</router-link> |
-      <router-link to="/logout">Logout</router-link> |
+      <router-link v-if="isLoggedIn()" to="/logout">Logout</router-link> 
+
+      <router-link v-else to="/login">Login</router-link> |
+      
       <router-link to="/users/:id">User Show</router-link> |
       <router-link to="/users/:id/edit">Edit Profile</router-link> | 
       <router-link to="/meditations">Meditations Index </router-link> |
@@ -23,6 +25,20 @@
  
 </div>
 </template>
+<script>
+export default {
+  methods: {
+    isLoggedIn: function() {
+      if (localStorage.getItem('jwt')) {
+        return true;
+      }
+      return false;
+    },
+  }
+};
+
+
+</script>
 
 <style>
 
