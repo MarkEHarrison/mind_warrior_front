@@ -6,11 +6,14 @@
       class="twitter-share-button"
       data-show-count="false"
     >Tweet</a> -->
+
     <h1>Meditations</h1>
+
     <div v-for="meditation in meditations">
       <h2>{{ meditation.title }}</h2>
       <p>Practice: {{ meditation.practice }}</p>
       <p>Length: {{ meditation.length }}</p>
+
       <p>Play</p>
       <button class="button play" @click.prevent="playSound(meditation.sound_url)">
         <span class="fa fa-play-circle-o"></span>
@@ -28,7 +31,7 @@ import axios from "axios";
 export default {
   data: function() {
     return {
-      user_meditations: [],
+      userMeditations: [],
       meditations: [],
       articles: []
     };
@@ -41,6 +44,12 @@ export default {
   },
   methods: {
     playSound(sound) {
+      if (sound) {
+        var audio = new Audio(sound);
+        audio.play();
+      }
+    },
+    pauseSound(sound) {
       if (sound) {
         var audio = new Audio(sound);
         audio.play();

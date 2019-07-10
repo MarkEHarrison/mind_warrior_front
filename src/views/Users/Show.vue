@@ -1,14 +1,19 @@
 <template>
   <div class="users-show">
-    {{user.meditations}}
+   
     <h1>Name: {{user.first_name}} {{user.last_name}}</h1>
     <h2>Email: {{ user.email }}</h2><br>
-    <h3>Favorites:</h3>
+
+    <img src="https://res.cloudinary.com/dcmo9tfmu/image/upload/v1561493524/MED%20PICS/capstone_tiqe2y.jpg" alt="mwp"> 
+    <h2>Favorites:</h2>
 
 
     <div v-for="meditation in user.meditations">
     <h3> {{meditation.title}} </h3>
     <p>play<button class="button play" @click.prevent="playSound(meditation.sound_url)">
+      <span class="fa fa-play-circle-o"></span>
+    </button></p><br>
+    <p>pause<button class="button play" @click.prevent="pauseSound(meditation.sound_url)">
       <span class="fa fa-play-circle-o"></span>
     </button></p><br>
     <p>un-fav<button class="button play" @click.prevent="toggleFavorite(meditation.id)">
@@ -36,11 +41,11 @@ export default {
   data: function() {
     return {
       user: {},
-      first_name: "",
-      last_name: "",
+      firstName: "",
+      lastName: "",
       email: "",
       errors: [],
-      user_meditations: [],
+      userMeditations: [],
       meditations: []
     };
   },
@@ -59,10 +64,17 @@ export default {
       });
     },
     playSound(sound) {
-      // if (sound) {
+      if (sound) {
         var audio = new Audio(sound);
         audio.play();
-      
+      }
+    },
+
+    pauseSound(sound) {
+      if (sound) {
+        var audio = new Audio(sound);
+        audio.pause();
+      }
     },
 
     toggleFavorite(medId) {
@@ -80,6 +92,7 @@ export default {
     }
   }
 };
+
 </script>
 
 <!-- if association exists a button to delete shows, if not a button to favorite -->
