@@ -1,32 +1,5 @@
 <template>
   <div class="meditations-index">
-    <!-- <div id="app"> -->
-    <!-- <a
-      href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-      class="twitter-share-button"
-      data-show-count="false"
-    >Tweet</a> -->
-
-    <h1>Meditations</h1>
-
-    <div v-for="meditation in meditations">
-      <h2>{{ meditation.title }}</h2>
-      <p>Practice: {{ meditation.practice }}</p>
-      <p>Length: {{ meditation.length }}</p>
-
-      <p>Play</p>
-      <button class="button play" @click.prevent="playSound(meditation.sound_url)">
-        <span class="fa fa-play-circle-o"></span>
-      </button><br>
-      <!-- <button class="button play" @click.prevent="pauseSound(meditation.sound_url)">
-        <span class="fa fa-play-circle-o"></span>
-      </button><br> -->
-      <p>Favorite</p>
-      <button class="button play" @click.prevent="toggleFavorite(meditation.id)">
-        <span class="fa fa-play-circle-o"></span>
-      </button>
-    </div>
-
     <div class="kotha-default-content">
       <div class="container">
         <div class="row">
@@ -47,7 +20,14 @@
                   <div class="post-content">
                     <header class="entry-header text-center text-uppercase">
                       <h6><a href="#"> craft</a></h6>
-                      <h2 class="entry-title"><a href=" ">{{ meditation.title }}</a></h2>
+                      <h4 class="entry-title"><a href=" ">{{ meditation.title }}</a></h4>
+                      <h2 class="entry-title"><a href=" ">{{ meditation.practice}}</a></h2>
+                      <button class="button play" @click.prevent="playSound(meditation.sound_url)">
+                        <span class="fa fa-play-circle-o"></span>
+                      </button><br>
+                      <button class="button play" @click.prevent="toggleFavorite(meditation.id)">
+                        <span class="fa fa-play-circle-o"></span>
+                      </button>
                     </header>
                   </div>
                 </article>
@@ -60,6 +40,8 @@
    
   </div>
 </template>
+
+
 <script>
 import axios from "axios";
 export default {

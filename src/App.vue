@@ -53,7 +53,7 @@
 
     <router-view/>
  
-    <footer>
+    <!-- <footer>
       <div class="container">
         <div class="footer-widget-row">
           <div class="footer-widget contact-widget">
@@ -104,7 +104,7 @@
           href="http://shapedtheme.com">ShapedTheme</a></p>
       </div>
     </footer>
-    
+     -->
 
  
   </div>
