@@ -5,7 +5,7 @@
     <div v-for="article in articles">
       <h2>{{ article.source }}</h2>
       <p>Author: {{ article.author }}</p>
-      <p>Tilte: {{ article.title }}</p>
+      <p>Title: {{ article.title }}</p>
       <p>Description: {{ article.description }}</p>
 
       <a target="_blank" rel="noopener noreferrer" v-bind:href="article.url">

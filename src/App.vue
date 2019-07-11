@@ -31,7 +31,7 @@
                 <li v-if="!isLoggedIn()"><router-link to="/signup">Signup</router-link></li>
                 <li v-if="isLoggedIn()"><router-link to="/logout">Logout</router-link></li>
                 <li v-else><router-link to="/login">Login</router-link></li>
-                <li><router-link to="/users/">Your Hub</router-link></li>
+                <li><router-link to="/users/${user_id}">Your Hub</router-link></li>
                 <li><router-link to="/meditations">Mindfulness Mode</router-link></li>
                 <li><router-link to="/articles">News Room</router-link></li>
               </ul>
