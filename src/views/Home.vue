@@ -4,7 +4,7 @@
     <div class="kotha-default-content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-md-12">
             <article class="single-blog">
               <div class="post-thumb">
                 <a href=""><img src="assets/images/post-thumb-1.jpg" alt=""></a>
@@ -44,10 +44,10 @@
             <div class="post-pagination  clearfix">
               <ul class="pagination text-left">
                 <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
+                <li><a href="meditations">2</a></li>
+                <li><a href="articles">3</a></li>
                 <li><a href="#">4</a></li>
-                <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                <!-- <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li> -->
               </ul>
             </div>
           </div>
@@ -240,6 +240,7 @@
       </div>
     </div>
   </div>
+
 
  
 </template>
