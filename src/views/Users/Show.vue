@@ -55,12 +55,15 @@
              <aside v-for="meditation in user.meditations" class="widget add-widget">
               <h2 class="widget-title text-uppercase text-center">{{meditation.title}}</h2>
               <h2 class="widget-title text-uppercase text-center">{{meditation.practice}}</h2>
-              <button class="button play" @click.prevent="playSound(meditation.sound_url)">
+              <center><button class="button play" @click.prevent="playSound(meditation.sound_url)">
                 <span class="fa fa-play-circle-o"></span>
-              </button>
-              <button class="button play" @click.prevent="toggleFavorite(meditation.id)">
-                <span class="glyphicon glyphicon-heart"></span>
-              </button>
+              </button></center><br>
+              <center><button class="button play" @click.prevent="toggleFavorite(meditation.id)">
+                <span class="fa-stack fa-1x">
+                    <i class="fa fa-heart fa-stack-1x"></i>
+                    <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
+                </span>
+              </button></center>
               <div class="add-image">
                 <a href=""><img src="assets/images/add-image.jpg" alt=""></a>
               </div>
@@ -105,6 +108,16 @@
   </div>
   
 </template>
+<style>
+.fa-heart {
+    color:#E4287C;
+}
+.fa-bolt {
+    top:-5%;
+    left:2%;
+    font-size:50%;
+}
+</style>
 
 <script>
 import axios from "axios";
