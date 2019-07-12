@@ -24,7 +24,12 @@
                 <div class="about-us-text">
                   <h3 class="text-uppercase">{{user.first_name}} {{user.last_name}}</h3>
                   <h5>{{user.email}}</h5>
-                  <p> </p>
+                  <button class="btn btn-warning">
+                    <router-link v-bind:to="'/users/' + user.id + '/edit'">Edit</router-link>
+                  </button>
+
+                  <!-- <button v-on:click="destroy(user)">Delete Account</button> -->
+                  
 
                   <div class="social-share">
                     <ul class="list-inline">
