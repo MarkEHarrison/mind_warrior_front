@@ -26,7 +26,7 @@
                         <span class="fa fa-play-circle-o"></span>
                       </button><br>
                       <button class="button play" @click.prevent="toggleFavorite(meditation.id)">
-                        <span class="fa fa-play-circle-o"></span>
+                        <span class="glyphicon glyphicon-heart"></span>
                       </button>
                     </header>
                   </div>
