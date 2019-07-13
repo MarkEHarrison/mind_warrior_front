@@ -50,6 +50,33 @@
                   </div>
                 </div>
               </div>
+              <div class="our-skills">
+                <h3 class="bar-heading text-left">My Military Skills Scores</h3>
+                <div class="bar">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                         aria-valuemax="300" style="width:100%">
+                      Army Combat Readiness Test (ACRT) {{user.acrt}}
+                    </div>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                         aria-valuemax="40" style="width:90%">
+                      Range Qualification {{user.range_qualification}}
+                    </div>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                         aria-valuemax="3:00:00" style="width:70%">
+                      12 Mile Ruck Time {{user.twelve_mile}}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </article>
           </div>
           <div class="col-sm-4">
@@ -132,9 +159,13 @@ export default {
       firstName: "",
       lastName: "",
       email: "",
+      acrt: "",
+      rangeQualification: "",
+      twelveMile: "",
       errors: [],
       userMeditations: [],
-      meditations: []
+      meditations: [],
+      articles: []
     };
   },
   created: function() {

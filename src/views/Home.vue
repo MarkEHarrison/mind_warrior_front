@@ -11,7 +11,7 @@
               </div>
               <div class="post-content">
                 <div class="entry-header text-center text-uppercase">
-                  <a href="" class="post-cat">Elevate</a>
+                  <a href="" class="post-cat">Rank Up</a>
                   <h2><a href="single-page.html">The Mind Warrior Project</a></h2>
                 </div>
                 <div class="entry-content">

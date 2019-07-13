@@ -21,6 +21,18 @@
           <input type="email" class="form-control" v-model="email">
         </div>
         <div class="form-group">
+          <label>ACRT Score:</label>
+          <input type="text" class="form-control" v-model="acrt">
+        </div>
+        <div class="form-group">
+          <label>Range Qualification Scorec:</label>
+          <input type="text" class="form-control" v-model="rangeQualification">
+        </div>
+        <div class="form-group">
+          <label>12 Mile Ruck Time:</label>
+          <input type="text" class="form-control" v-model="twelveMile">
+        </div>
+        <div class="form-group">
           <label>Password:</label>
           <input type="password" class="form-control" v-model="password">
         </div>
@@ -50,6 +62,9 @@ export default {
       firstName: "",
       lastName: "",
       email: "",
+      acrt: "",
+      rangeQualification: "",
+      twelveMile: "",
       password: "",
       passwordConfirmation: "",
       errors: []
@@ -61,6 +76,9 @@ export default {
         first_name: this.firstName,
         last_name: this.lastName,
         email: this.email,
+        acrt: this.acrt,
+        range_qualification: this.rangeQualification,
+        twelve_mile: this.twelveMile,
         password: this.password,
         password_confirmation: this.passwordConfirmation
       };
