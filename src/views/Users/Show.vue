@@ -10,11 +10,11 @@
                   <img src="https://res.cloudinary.com/dcmo9tfmu/image/upload/v1562951922/MED%20PICS/blog-carousel-3_okndlo.jpg" alt="" class="img-circle">
                 </div>
                 <div class="about-me-text">
-                  <p>We are Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eir
+                  <p><!-- We are Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eir
                     dulabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
                     justo duo dolores rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
                     ipsum dolor sit am Lorem ipsum dolor sitconsetetur sadipscing elitr, sed diam nonumy
-                    eirmod tempor invidunt ut labore et dolore maliquyam erat, sed diam voluptua. </p>
+                    eirmod tempor invidunt ut labore et dolore maliquyam erat, sed diam voluptua. --> </p>
                 </div>
               </div>
               <div class="single-about">
@@ -32,19 +32,19 @@
                   <div class="social-share">
                     <ul class="list-inline">
                       <li class="text-center">
-                        <a class="s-facebook" href=""><i class="fa fa-facebook"></i></a>
+                        <a class="s-facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
                       </li>
                       <li class="text-center">
-                        <a class="s-twitter" href=""><i class="fa fa-twitter"></i></a>
+                        <a class="s-twitter" href="https://twitter.com/home"><i class="fa fa-twitter"></i></a>
                       </li>
                       <li class="text-center">
                         <a class="s-google-plus" href=""><i class="fa fa-google-plus"></i></a>
                       </li>
                       <li class="text-center">
-                        <a class="s-linkedin" href=""><i class="fa fa-linkedin"></i></a>
+                        <a class="s-linkedin" href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a>
                       </li>
                       <li class="text-center">
-                        <a class="s-instagram" href=""><i class="fa fa-instagram"></i></a>
+                        <a class="s-instagram" href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
                       </li>
                     </ul>
                   </div>
