@@ -12,31 +12,25 @@
               <div class="post-content">
                 <div class="entry-header text-center text-uppercase">
                   <a href="" class="post-cat">Rank Up</a>
-                  <h2><a href="single-page.html">The Mind Warrior Project</a></h2>
+                  <h2><a href="meditations">Mind Warrior Project</a></h2>
                 </div>
                 <div class="entry-content">
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                    accusam
-                    et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                    voluptua...</p>
+                  <p>MWP is dedicated to helping you rank up and make the most of your career by infusing mental health into your personal care routine. Mindfulness is used by special forces to increase intelligence, focus, and calm under chaos. Meditate in Mindfulness Mode, store your favorites in My Hub, then jump into the News Room and stay current on all news that might affect where you're going next in the world.</p>
                 </div>
                 <div class="continue-reading text-center text-uppercase">
                   <a href="meditations">Meditate</a>
                 </div>
                 <div class="post-meta">
                   <ul class="pull-left list-inline author-meta">
-                    <li class="author"><a href="#">Mark H </a></li><br>
+                    <li class="author"><a href="#">HM </a></li><br>
                     <li class="date"> On July 4th, 2019</li>
                   </ul>
                   <ul class="pull-right list-inline social-share">
-                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/home"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
                     <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a></li>
                   </ul>
                 </div>
               </div>
