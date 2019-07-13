@@ -16,7 +16,7 @@
                     </div>
                     <div class="media-body">
                       <div class="post-content">
-                        <div class="entry-header text-left text-uppercase">
+                        <div class="entry-header cdtext-left text-uppercase">
                           <a href="" class="post-cat">Story</a>
                           <h2><a href="single-page.html">{{article.title}}</a></h2>
                         </div>
