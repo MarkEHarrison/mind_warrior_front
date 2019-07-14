@@ -11,11 +11,13 @@
               </div>
               <div class="post-content">
                 <div class="entry-header text-center text-uppercase">
-                  <a href="" class="post-cat">Rank Up</a>
+                  <a href="" class="post-cat">Elevate</a>
                   <h2><a href="meditations">Mind Warrior Project</a></h2>
                 </div>
                 <div class="entry-content">
-                  <p>MWP is dedicated to helping you rank up and make the most of your career by infusing mental health into your personal care routine. Mindfulness is used by special forces to increase intelligence, focus, and calm under chaos. Meditate in Mindfulness Mode, store your favorites in My Hub, then jump into the News Room and stay current on all news that might affect where you're going next in the world.</p>
+                  <h4>MWP is dedicated to helping you rank up and make the most of your career by infusing mental health into your personal care routine. 
+                  Increase intelligence, focus, and calm under chaos. 
+                  Meditate in Mindfulness Mode, store your favorites in My Hub, then jump into the News Room and stay current on all news that might affect where you're going next in the world.</h4>
                 </div>
                 <div class="continue-reading text-center text-uppercase">
                   <a href="meditations">Meditate</a>

@@ -4,19 +4,25 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            <article class="post-area single-blog">
-              <div class="about-me">
+            <article class="single-blog">
+              <div class="post-thumb">
+                <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
+                  
+                </iframe>
+              </div>
+
+              <!-- <div class="about-me">
                 <div class="about-img text-center">
                   <img src="https://res.cloudinary.com/dcmo9tfmu/image/upload/v1562951922/MED%20PICS/blog-carousel-3_okndlo.jpg" alt="" class="img-circle">
                 </div>
                 <div class="about-me-text">
-                  <p><!-- We are Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eir
+                  <p>We are Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eir
                     dulabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
                     justo duo dolores rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
                     ipsum dolor sit am Lorem ipsum dolor sitconsetetur sadipscing elitr, sed diam nonumy
-                    eirmod tempor invidunt ut labore et dolore maliquyam erat, sed diam voluptua. --> </p>
+                    eirmod tempor invidunt ut labore et dolore maliquyam erat, sed diam voluptua. </p>
                 </div>
-              </div>
+              </div> -->
               <div class="single-about">
                 <div class="about-us-img pull-left">
                   <img src="assets/images/team-member-1.jpg" alt="" class="img-circle">
@@ -97,6 +103,18 @@
               <div class="add-image">
                 <a href=""><img src="assets/images/add-image.jpg" alt=""></a>
               </div>
+             </aside>
+             <aside class="widget news-letter-widget">
+              <h2 class="widget-title text-uppercase text-center">Your Account</h2>
+              <form action="#">
+                <button class="btn btn-warning">
+                  <router-link v-bind:to="'/users/' + user.id + '/edit'">Edit</router-link>
+                </button><br>
+                <button class="btn btn-warning" v-on:click="destroy(user)">Delete Account</button>
+                <!-- <input type="email" placeholder="Your email address" required>
+                <input type="submit" value="Subscribe Now"
+                       class="text-uppercase text-center btn btn-subscribe"> -->
+              </form>
              </aside> 
             </div>
           </div>
