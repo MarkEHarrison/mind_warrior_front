@@ -1,12 +1,12 @@
 <template>
-
   <div class="articles-index">
+  <center><h1>News Room</h1></center>
     <div class="kotha-default-content">
       <div class="container">
         <div class="row">
           <div v-for="article in articles" class="col-sm-8 text-center">
             <div class="row">
-              <div class="col-md-12 col-md-offset-3">
+              <div class="col-sm-8 col-sm-offset-5">
                 <article class="single-blog post-list">
                   <div class="media">
                     <div class="media-left">

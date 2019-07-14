@@ -7,6 +7,9 @@
         First Name: <input type="text" v-model="user.first_name"><br>
         Last Name: <input type="text" v-model="user.last_name"><br>
         Email: <input type="text" v-model="user.email"><br>
+        ACRT: <input type="text" v-model="user.acrt"><br>
+        Range Score: <input type="text" v-model="user.range_qualification"><br>
+        12 Mile Time: <input type="text" v-model="user.twelve_mile"><br>
         <button type="submit">Update Account</button><br>
       </form>
     </div>
@@ -30,6 +33,8 @@ export default {
   data: function() {
     return {
       user: {},
+      meditations: [],
+
       errors: []
     };
   },

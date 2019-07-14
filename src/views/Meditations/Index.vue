@@ -8,7 +8,7 @@
               <div v-for="meditation in meditations" class="col-md-4">
                 <article class="portfolio portfolio-2 post-grid">
                   <div class="post-thumb">
-                    <a href=" "><img src="assets/images/gl-1.jpg" alt=""></a>
+                    <a href=" "><img src="assets/images/gl-2.jpg" alt=""></a>
                     <div class="post-thumb-overlay text-center">
                       <div class="text-uppercase text-center">
                         <a href="single-portfolio.html"><i class="fa fa-link"></i></a>
