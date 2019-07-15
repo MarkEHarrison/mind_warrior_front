@@ -8,19 +8,6 @@
               <div class="post-thumb">
                 <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
               </div>
-
-              <!-- <div class="about-me">
-                <div class="about-img text-center">
-                  <img src="https://res.cloudinary.com/dcmo9tfmu/image/upload/v1562951922/MED%20PICS/blog-carousel-3_okndlo.jpg" alt="" class="img-circle">
-                </div>
-                <div class="about-me-text">
-                  <p>We are Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eir
-                    dulabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                    ipsum dolor sit am Lorem ipsum dolor sitconsetetur sadipscing elitr, sed diam nonumy
-                    eirmod tempor invidunt ut labore et dolore maliquyam erat, sed diam voluptua. </p>
-                </div>
-              </div> -->
               <div class="single-about">
                 <div class="about-us-img pull-left">
                   <img src="assets/images/team-member-1.jpg" alt="" class="img-circle">
@@ -28,11 +15,6 @@
                 <div class="about-us-text">
                   <h3 class="text-uppercase">{{user.first_name}} {{user.last_name}}</h3>
                   <h5>{{user.email}}</h5>
-                  
-
-                  <!-- <button v-on:click="destroy(user)">Delete Account</button> -->
-                  
-
                   <div class="social-share">
                     <ul class="list-inline">
                       <li class="text-center">
@@ -83,16 +65,17 @@
               </div>
             </article>
           </div>
+
           <div class="col-sm-4">
             <div class="kotha-sidebar">
               <h1><center>My Meditations</center></h1><br>
              <aside v-for="meditation in user.meditations" class="widget add-widget">
               <h2 class="widget-title text-uppercase text-center">{{meditation.title}}</h2>
               <h2 class="widget-title text-uppercase text-center">{{meditation.practice}}</h2>
-              <center><button class="button play" @click.prevent="playSound(meditation.sound_url)">
+              <center><button class="btn btn-dark" @click.prevent="playSound(meditation.sound_url)">
                 <span class="fa fa-play-circle-o"></span>
-              </button></center><br>
-              <center><button class="button play" @click.prevent="toggleFavorite(meditation.id)">
+              </button></center>
+              <center><button class="btn btn-dark" @click.prevent="toggleFavorite(meditation.id)">
                 <span class="fa-stack fa-1x">
                     <i class="fa fa-heart fa-stack-1x"></i>
                     <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
@@ -105,55 +88,18 @@
              <aside class="widget news-letter-widget">
               <h2 class="widget-title text-uppercase text-center">Your Account</h2>
               <form action="#">
-                <button class="btn btn-warning">
-                  <router-link v-bind:to="'/users/' + user.id + '/edit'">Edit</router-link>
-                </button><br>
-                <button class="btn btn-warning" v-on:click="destroy(user)">Delete Account</button>
-                <!-- <input type="email" placeholder="Your email address" required>
-                <input type="submit" value="Subscribe Now"
-                       class="text-uppercase text-center btn btn-subscribe"> -->
+                <center><button class="btn btn-danger">
+                  <router-link v-bind:to="'/users/' + user.id + '/edit'">Edit Profile</router-link>
+                </button></center><br>
+                <center><button class="btn btn-danger" v-on:click="destroy(user)">Delete Account</button></center>
               </form>
              </aside> 
             </div>
           </div>
         </div>
       </div>
-      
     </div>
-
-   
-    <!-- <h1>Name: {{user.first_name}} {{user.last_name}}</h1>
-    <h2>Email: {{ user.email }}</h2><br>
-
-    <img src="https://res.cloudinary.com/dcmo9tfmu/image/upload/v1561493524/MED%20PICS/capstone_tiqe2y.jpg" alt="mwp"> 
-    <h2>Favorites:</h2>
-
-
-    <div v-for="meditation in user.meditations">
-    <h3> {{meditation.title}} </h3>
-    <p>play<button class="button play" @click.prevent="playSound(meditation.sound_url)">
-      <span class="fa fa-play-circle-o"></span>
-    </button></p><br>
-    <p>pause<button class="button play" @click.prevent="pauseSound(meditation.sound_url)">
-      <span class="fa fa-play-circle-o"></span>
-    </button></p><br>
-    <p>un-fav<button class="button play" @click.prevent="toggleFavorite(meditation.id)">
-      <span class="fa fa-play-circle-o"></span>
-    </button></p>
-      
-    </div>
-  
-
-    
-
-    <button class="btn btn-warning">
-      <router-link v-bind:to="'/users/' + user.id + '/edit'">Edit</router-link>
-    </button>
-
-    <button v-on:click="destroy(user)">Delete Account</button>
-     -->
   </div>
-  
 </template>
 <style>
 .fa-heart {

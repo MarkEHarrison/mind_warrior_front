@@ -4,9 +4,9 @@
     <div class="kotha-default-content">
       <div class="container">
         <div class="row">
-          <div v-for="article in articles" class="col-sm-8 text-center">
+          <div v-for="article in articles" class="col-md-12 text-center">
             <div class="row">
-              <div class="col-sm-8 col-sm-offset-5">
+              <div class="col-sm-8 col-sm-offset-2">
                 <article class="single-blog post-list">
                   <div class="media">
                     <div class="media-left">
@@ -29,7 +29,7 @@
                           </ul>
                         </div>
                         <center><a target="_blank" rel="noopener noreferrer" v-bind:href="article.url">
-                          <button class="btn-warning">
+                          <button class="btn btn-success">
                             <p>GO TO STORY</p>
                           </button>
                         </a></center>

@@ -22,9 +22,6 @@
                 <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
                 <li><a href=""><i class="fa fa-google-plus"></i></a></li>
                 <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a></li>
-                <li class="top-search">
-                  <a href="#" class="sactive"><i class="fa fa-search"></i></a>
-                </li>
               </ul>
               <ul class="nav navbar-nav text-uppercase pull-left">
                 <li><router-link to="/">Home</router-link></li>

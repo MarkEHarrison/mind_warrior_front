@@ -5,29 +5,45 @@
         <div class="row">
           <div class="col-md-12">
             <div class="row">
-              <div v-for="meditation in meditations" class="col-md-4">
+              <div :key="meditation.id" v-for="meditation in meditations" class="col-md-4">
                 <article class="portfolio portfolio-2 post-grid">
                   <div class="post-thumb">
-                    <a href=" "><img src="assets/images/gl-2.jpg" alt=""></a>
+                    <a href=" ">
+                      <img src="assets/images/gl-2.jpg" alt />
+                    </a>
                     <div class="post-thumb-overlay text-center">
                       <div class="text-uppercase text-center">
-                        <a href="single-portfolio.html"><i class="fa fa-link"></i></a>
-                        <a href="assets/images/gl-1.jpg" data-rel="prettyPhoto[gallery]"><i
-                          class="fa fa-search"></i></a>
+                        <a href="single-portfolio.html">
+                          <i class="fa fa-link"></i>
+                        </a>
+                        <a href="assets/images/gl-1.jpg" data-rel="prettyPhoto[gallery]">
+                          <i class="fa fa-search"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
                   <div class="post-content">
                     <header class="entry-header text-center text-uppercase">
-                      <h6><a href="#"> craft</a></h6>
-                      <h4 class="entry-title"><a href=" ">{{ meditation.title }}</a></h4>
-                      <h2 class="entry-title"><a href=" ">{{ meditation.practice}}</a></h2>
-                      <button class="button play" @click.prevent="playSound(meditation.sound_url)">
-                        <span class="fa fa-play-circle-o"></span>
-                      </button><br>
-                      <button class="button play" @click.prevent="toggleFavorite(meditation.id)">
-                        <span class="glyphicon glyphicon-heart"></span>
-                      </button>
+                      <h6>
+                        <a href="#">{{meditation.length}}</a>
+                      </h6>
+                      <h4 class="entry-title">
+                        <a href=" ">{{ meditation.title }}</a>
+                      </h4>
+                      <h2 class="entry-title">
+                        <a href=" ">{{ meditation.practice }}</a>
+                      </h2>
+                      <div :style="styles.buttonGroup">
+                        <div
+                          :style="styles.button"
+                          @click.prevent="playSound(meditation.sound_url)">
+                          <span class="fa fa-play fa-2x"></span>
+                        </div>
+                        <br />
+                        <div @click.prevent="toggleFavorite(meditation.id)">
+                          <span :style="styles.button" class="fa fa-heart fa-2x" ></span>
+                        </div>
+                      </div>
                     </header>
                   </div>
                 </article>
@@ -37,20 +53,33 @@
         </div>
       </div>
     </div>
-   
   </div>
 </template>
 
 
 <script>
 import axios from "axios";
+
+const styles = {
+  buttonGroup: {
+    display: "flex",
+    "justify-content": "space-between",
+    "margin-top": "20px"
+  },
+  button: {
+    width: "80px",
+    color: "rgb(68, 68, 68)"
+  }
+};
+
 export default {
   data: function() {
     return {
       userMeditations: [],
       meditations: [],
       articles: [],
-      audioPlay: false
+      audioPlay: false,
+      styles
     };
   },
   created: function() {
@@ -60,7 +89,6 @@ export default {
     });
   },
   methods: {
-
     // pauseSound(sound) {
 
     //   if (sound) {
@@ -98,8 +126,6 @@ export default {
           this.errors = error.response.data.errors;
         });
     }
-
   }
 };
 </script>
-

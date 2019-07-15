@@ -20,9 +20,9 @@
                   Meditate in Mindfulness Mode, store your favorites in My Hub, then jump into the News Room and stay current on all news that might affect where you're going next in the world.</h4> -->
                 </div>
                 <div class="continue-reading text-center text-uppercase">
-                  <a href="meditations">Meditate</a>
+                  <a href="meditations">Go Meditate</a>
                 </div>
-                <div class="post-meta">
+                <!-- <div class="post-meta">
                   <ul class="pull-left list-inline author-meta">
                     <li class="author"><a href="#">HM </a></li><br>
                     <li class="date"> On July 4th, 2019</li>
@@ -34,7 +34,7 @@
                     <li><a href=""><i class="fa fa-google-plus"></i></a></li>
                     <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a></li>
                   </ul>
-                </div>
+                </div> -->
               </div>
             </article>
             <div class="post-pagination  clearfix">
