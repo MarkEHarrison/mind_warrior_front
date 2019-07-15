@@ -42,7 +42,7 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                          aria-valuemax="300" style="width:100%">
-                      Army Combat Readiness Test (ACRT) {{user.acrt}}
+                      Army Combat Readiness Test (ACRT) 300{{user.acrt}}
                     </div>
                   </div>
                 </div>
@@ -50,7 +50,7 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                          aria-valuemax="40" style="width:90%">
-                      Range Qualification {{user.range_qualification}}
+                      Range Qualification 36{{user.range_qualification}}
                     </div>
                   </div>
                 </div>
@@ -58,14 +58,13 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                          aria-valuemax="3:00:00" style="width:70%">
-                      12 Mile Ruck Time {{user.twelve_mile}}
+                      12 Mile Ruck Time 2:30:00{{user.twelve_mile}}
                     </div>
                   </div>
                 </div>
               </div>
             </article>
           </div>
-
           <div class="col-sm-4">
             <div class="kotha-sidebar">
               <h1><center>My Meditations</center></h1><br>
@@ -176,4 +175,3 @@ export default {
 
 </script>
 
-<!-- if association exists a button to delete shows, if not a button to favorite -->

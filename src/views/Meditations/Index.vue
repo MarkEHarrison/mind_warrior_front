@@ -31,17 +31,20 @@
                         <a href=" ">{{ meditation.title }}</a>
                       </h4>
                       <h2 class="entry-title">
-                        <a href=" ">{{ meditation.practice }}</a>
+                        <a href=" ">{{ meditation.practice}}</a>
                       </h2>
                       <div :style="styles.buttonGroup">
                         <div
                           :style="styles.button"
-                          @click.prevent="playSound(meditation.sound_url)">
-                          <span class="fa fa-play fa-2x"></span>
+                          @click.prevent="playSound(meditation.sound_url)"
+                        >
+                          <span
+                            :class="[meditation.sound_url !== playing ? playClass : pauseClass]"
+                          ></span>
                         </div>
                         <br />
                         <div @click.prevent="toggleFavorite(meditation.id)">
-                          <span :style="styles.button" class="fa fa-heart fa-2x" ></span>
+                          <span :style="styles.button" class="fa fa-heart fa-2x"></span>
                         </div>
                       </div>
                     </header>
@@ -78,8 +81,10 @@ export default {
       userMeditations: [],
       meditations: [],
       articles: [],
-      audioPlay: false,
-      styles
+      playing: "",
+      styles,
+      playClass: "fa fa-play fa-2x",
+      pauseClass: "fa fa-pause fa-2x"
     };
   },
   created: function() {
@@ -98,16 +103,16 @@ export default {
     // },
     // playSound(sound) {
 
-    playSound(sound) {
+    playSound(soundUrl) {
       if (!this.audio) {
-        this.audio = new Audio(sound);
+        this.audio = new Audio(soundUrl);
       }
-      if (this.audioPlay === false) {
+      if (this.playing !== soundUrl) {
         this.audio.play();
-        this.audioPlay = true;
+        this.playing = soundUrl;
       } else {
         this.audio.pause();
-        this.audioPlay = false;
+        this.playing = "";
       }
     },
 

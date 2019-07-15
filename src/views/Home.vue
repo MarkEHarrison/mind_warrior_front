@@ -22,19 +22,6 @@
                 <div class="continue-reading text-center text-uppercase">
                   <a href="meditations">Go Meditate</a>
                 </div>
-                <!-- <div class="post-meta">
-                  <ul class="pull-left list-inline author-meta">
-                    <li class="author"><a href="#">HM </a></li><br>
-                    <li class="date"> On July 4th, 2019</li>
-                  </ul>
-                  <ul class="pull-right list-inline social-share">
-                    <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/home"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
-                    <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a></li>
-                  </ul>
-                </div> -->
               </div>
             </article>
             <div class="post-pagination  clearfix">
@@ -43,7 +30,6 @@
                 <li><a href="meditations">2</a></li>
                 <li><a href="articles">3</a></li>
                 <li><a href="#">4</a></li>
-                <!-- <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li> -->
               </ul>
             </div>
           </div>
