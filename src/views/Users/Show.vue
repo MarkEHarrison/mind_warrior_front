@@ -6,7 +6,7 @@
           <div class="col-sm-8">
             <article class="single-blog">
               <div class="post-thumb">
-                <iframe src="https://open.spotify.com/embed/album/2uL4yvjeT0c3Wv8CF9lQcN" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed/album/4Wv5UAieM1LDEYVq5WmqDd" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>-
               </div><br>
             </article>
               <div class="our-skills">
