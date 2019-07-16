@@ -67,23 +67,45 @@
           </div>
           <div class="col-sm-4">
             <div class="kotha-sidebar">
-              <h1><center>My Meditations</center></h1><br>
-             <aside v-for="meditation in user.meditations" class="widget add-widget">
-              <h2 class="widget-title text-uppercase text-center">{{meditation.title}}</h2>
-              <h2 class="widget-title text-uppercase text-center">{{meditation.practice}}</h2>
-              <center><button class="btn btn-dark" @click.prevent="playSound(meditation.sound_url)">
-                <span class="fa fa-play-circle-o"></span>
-              </button></center>
-              <center><button class="btn btn-dark" @click.prevent="toggleFavorite(meditation.id)">
-                <span class="fa-stack fa-1x">
-                    <i class="fa fa-heart fa-stack-1x"></i>
-                    <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
-                </span>
-              </button></center>
-              <div class="add-image">
-                <a href=""><img src="assets/images/add-image.jpg" alt=""></a>
-              </div>
-             </aside>
+              <center><h1> My Meditations </h1></center>
+              <aside v-for="meditation in user.meditations" class="widget widget-popular-post">
+                        <h3 class="widget-title text-uppercase text-center"></h3>
+                        <ul>
+                          <li>
+                            <a href="#" class="popular-img"><img :src="meditation.image_url" alt="">
+                            </a>
+                            <div class="p-content">
+                              <center><h4><a href="#" class="text-uppercase">{{meditation.title}}</a></h4></center>
+                              <center><h4><a href="#" class="text-uppercase">{{meditation.practice}}</a></h4></center>
+                              <div :style="styles.buttonGroup">
+                                <div
+                                  :style="styles.button"
+                                  @click.prevent="playSound(meditation.sound_url)">
+                                  <span
+                                    :class="[meditation.sound_url !== playing ? playClass : pauseClass]"
+                                  ></span>
+                                </div>
+                                <div
+                                :style="styles.button"
+                                @click.prevent="toggleFavorite(meditation.id)">
+                                <span class="fa-stack fa-2x">
+                                  <i class="fa fa-heart fa-stack-1x"></i>
+                                  <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
+                                  
+                                </span>
+        
+                                <!-- <div @click.prevent="toggleFavorite(meditation.id)">
+                                  <span :style="styles.button" class="fa-stack fa-2x">
+                                    <i class="fa fa-heart fa-stack-1x"></i>
+                                    <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                </div> -->
+                              </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </aside>
              <aside class="widget news-letter-widget">
               <h2 class="widget-title text-uppercase text-center">Your Account</h2>
               <form action="#">
@@ -114,6 +136,18 @@
 <script>
 import axios from "axios";
 
+const styles = {
+  buttonGroup: {
+    display: "flex",
+    "justify-content": "space-between",
+    "margin-top": "20px"
+  },
+  button: {
+    width: "80px",
+    // color: "rgb(68, 68, 68)"
+  }
+};
+
 export default {
   data: function() {
     return {
@@ -127,7 +161,11 @@ export default {
       errors: [],
       userMeditations: [],
       meditations: [],
-      articles: []
+      articles: [],
+      playing: "",
+      styles,
+      playClass: "fa fa-play fa-2x",
+      pauseClass: "fa fa-pause fa-2x"
     };
   },
   created: function() {

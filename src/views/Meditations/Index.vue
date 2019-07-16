@@ -9,7 +9,7 @@
                 <article class="portfolio portfolio-2 post-grid">
                   <div class="post-thumb">
                     <a href=" ">
-                      <img src="assets/images/gl-2.jpg" alt />
+                      <img :src="meditation.image_url"/>
                     </a>
                     <div class="post-thumb-overlay text-center">
                       <div class="text-uppercase text-center">
@@ -36,8 +36,7 @@
                       <div :style="styles.buttonGroup">
                         <div
                           :style="styles.button"
-                          @click.prevent="playSound(meditation.sound_url)"
-                        >
+                          @click.prevent="playSound(meditation.sound_url)">
                           <span
                             :class="[meditation.sound_url !== playing ? playClass : pauseClass]"
                           ></span>
@@ -71,7 +70,7 @@ const styles = {
   },
   button: {
     width: "80px",
-    color: "rgb(68, 68, 68)"
+    // color: "rgb(68, 68, 68)"
   }
 };
 
