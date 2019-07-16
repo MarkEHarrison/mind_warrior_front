@@ -6,36 +6,9 @@
           <div class="col-sm-8">
             <article class="single-blog">
               <div class="post-thumb">
-                <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-              </div>
-              <div class="single-about">
-                <div class="about-us-img pull-left">
-                  <img src="assets/images/team-member-1.jpg" alt="" class="img-circle">
-                </div>
-                <div class="about-us-text">
-                  <h3 class="text-uppercase">{{user.first_name}} {{user.last_name}}</h3>
-                  <h5>{{user.email}}</h5>
-                  <div class="social-share">
-                    <ul class="list-inline">
-                      <li class="text-center">
-                        <a class="s-facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
-                      </li>
-                      <li class="text-center">
-                        <a class="s-twitter" href="https://twitter.com/home"><i class="fa fa-twitter"></i></a>
-                      </li>
-                      <li class="text-center">
-                        <a class="s-google-plus" href=""><i class="fa fa-google-plus"></i></a>
-                      </li>
-                      <li class="text-center">
-                        <a class="s-linkedin" href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a>
-                      </li>
-                      <li class="text-center">
-                        <a class="s-instagram" href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+                <iframe src="https://open.spotify.com/embed/album/2uL4yvjeT0c3Wv8CF9lQcN" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div><br>
+            </article>
               <div class="our-skills">
                 <h3 class="bar-heading text-left">My Military Skills Scores</h3>
                 <div class="bar">
@@ -62,64 +35,115 @@
                     </div>
                   </div>
                 </div>
+              </div><br>
+            <article>
+              <div class="top-comment"><!--top comment-->
+                <img src="assets/images/comment.jpg" class="pull-left img-circle" alt="">
+                <h3><a href="">{{user.first_name}} {{user.last_name}}</a></h3>
+                <h4>{{user.email}}</h4>
+                <div class="social-share">
+                    <ul class="list-inline">
+                      <li class="text-center">
+                        <a class="s-facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li class="text-center">
+                        <a class="s-twitter" href="https://twitter.com/home"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="text-center">
+                        <a class="s-google-plus" href=""><i class="fa fa-google-plus"></i></a>
+                      </li>
+                      <li class="text-center">
+                        <a class="s-linkedin" href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                      <li class="text-center">
+                        <a class="s-instagram" href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
               </div>
             </article>
           </div>
           <div class="col-sm-4">
-            <div class="kotha-sidebar">
-              <center><h1> My Meditations </h1></center>
-              <aside v-for="meditation in user.meditations" class="widget widget-popular-post">
-                        <h3 class="widget-title text-uppercase text-center"></h3>
-                        <ul>
-                          <li>
-                            <a href="#" class="popular-img"><img :src="meditation.image_url" alt="">
-                            </a>
-                            <div class="p-content">
-                              <center><h4><a href="#" class="text-uppercase">{{meditation.title}}</a></h4></center>
-                              <center><h4><a href="#" class="text-uppercase">{{meditation.practice}}</a></h4></center>
-                              <div :style="styles.buttonGroup">
-                                <div
-                                  :style="styles.button"
-                                  @click.prevent="playSound(meditation.sound_url)">
-                                  <span
-                                    :class="[meditation.sound_url !== playing ? playClass : pauseClass]"
-                                  ></span>
-                                </div>
-                                <div
-                                :style="styles.button"
-                                @click.prevent="toggleFavorite(meditation.id)">
-                                <span class="fa-stack fa-2x">
-                                  <i class="fa fa-heart fa-stack-1x"></i>
-                                  <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
-                                  
-                                </span>
-        
-                                <!-- <div @click.prevent="toggleFavorite(meditation.id)">
-                                  <span :style="styles.button" class="fa-stack fa-2x">
-                                    <i class="fa fa-heart fa-stack-1x"></i>
-                                    <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
-                                  </span>
-                                </div> -->
-                              </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </aside>
-             <aside class="widget news-letter-widget">
-              <h2 class="widget-title text-uppercase text-center">Your Account</h2>
-              <form action="#">
-                <center><button class="btn btn-danger">
-                  <router-link v-bind:to="'/users/' + user.id + '/edit'">Edit Profile</router-link>
-                </button></center><br>
-                <center><button class="btn btn-danger" v-on:click="destroy(user)">Delete Account</button></center>
-              </form>
-             </aside> 
-            </div>
-          </div>
+                      <div class="kotha-sidebar">
+                        <center><h1> My Meditations </h1></center>
+                          <aside v-for="meditation in user.meditations" class="widget widget-popular-post">
+                                  <h3 class="widget-title text-uppercase text-center"></h3>
+                                  <ul>
+                                    <li>
+                                      <a href="#" class="popular-img"><img :src="meditation.image_url" alt="meditation.image_url">
+                                      </a>
+                                      <div class="p-content">
+                                        <center><h4><a href="#" class="text-uppercase">{{meditation.title}}</a></h4></center>
+                                        <center><h4><a href="#" class="text-uppercase">{{meditation.practice}}</a></h4></center>
+                                        <div :style="styles.buttonGroup">
+                                          <div
+                                            :style="styles.button"
+                                            @click.prevent="playSound(meditation.sound_url)">
+                                            <span
+                                              :class="[meditation.sound_url !== playing ? playClass : pauseClass]"
+                                            ></span>
+                                          </div>
+                                          <br />
+                                          <div @click.prevent="toggleFavorite(meditation.id)">
+                                            <span :style="styles.button" class="fa fa-heart fa-2x"></span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </aside>
+                          <aside class="widget news-letter-widget">
+                            <h2 class="widget-title text-uppercase text-center">Your Account</h2>
+                            <form action="#">
+                              <center><button class="btn btn-danger">
+                              <router-link v-bind:to="'/users/' + user.id + '/edit'">Edit Profile</router-link>
+                            </button></center><br>
+                            <center><button class="btn btn-danger" v-on:click="destroy(user)">Delete Account</button></center>
+                            </form>
+                       </aside> 
+                      </div>
+                    </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="footer-widget-row">
+        <div class="footer-widget contact-widget">
+          <p>MWP is dedicated to helping you rank up and make the most of your career by infusing mental health into your personal care routine. 
+                  Increase intelligence, focus, and calm under chaos. 
+                  Meditate in Mindfulness Mode, store your favorites in My Hub, then jump into the News Room and stay current on all news that might affect where you're going next in the world.</p>
+          <div class="address">
+            <h4 class="text-uppercase">contact Info</h4>
+            <p> 123 America Blvd, USA</p>
+            <p> Phone: +123 456 78900</p>
+            <a href="mailto:mhworld11@icloud.com">mhworld11@icloud.com</a>
+          </div>
+        </div>
+        <div class="footer-widget twitter-widget">
+          <h2 class="widget-title text-uppercase">
+            Latest TWeeTs
+          </h2>
+          <div class="single-tweet">
+            <p>Check our new Twitter Page <br>
+              <a href="https://twitter.com/MindWarriorPro">https://twitter.com/MindWarriorPro</a></p>
+            <h4><i class="fa fa-twitter"></i>Tweeted on 17 hours ago</h4>
+          </div>
+        </div>
+        <div class="footer-widget social-widget">
+          <h2 class="widget-title text-uppercase">
+            Featured video
+          </h2>
+          <div class="footer-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sEmZIi_0Kj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="text-center ft-copyright">
+        <p>&copy; 2017 <a href="">Kotha PRO </a> - Designed with <i class="fa fa-heart"></i> by <a
+          href="http://shapedtheme.com">ShapedTheme</a>
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 <style>
@@ -144,7 +168,7 @@ const styles = {
   },
   button: {
     width: "80px",
-    // color: "rgb(68, 68, 68)"
+    color: "rgb(68, 68, 68)"
   }
 };
 

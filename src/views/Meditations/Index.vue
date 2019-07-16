@@ -11,16 +11,6 @@
                     <a href=" ">
                       <img :src="meditation.image_url"/>
                     </a>
-                    <div class="post-thumb-overlay text-center">
-                      <div class="text-uppercase text-center">
-                        <a href="single-portfolio.html">
-                          <i class="fa fa-link"></i>
-                        </a>
-                        <a href="assets/images/gl-1.jpg" data-rel="prettyPhoto[gallery]">
-                          <i class="fa fa-search"></i>
-                        </a>
-                      </div>
-                    </div>
                   </div>
                   <div class="post-content">
                     <header class="entry-header text-center text-uppercase">
