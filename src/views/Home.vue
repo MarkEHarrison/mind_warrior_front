@@ -29,7 +29,6 @@
                 <li class="active"><a href="#">1</a></li>
                 <li><a href="meditations">2</a></li>
                 <li><a href="articles">3</a></li>
-                <li><a href="#">4</a></li>
               </ul>
             </div>
           </div>

@@ -65,7 +65,7 @@
           </div>
           <div class="col-sm-4">
                       <div class="kotha-sidebar">
-                        <center><h1> My Meditations </h1></center>
+                        <center><h1> MY MEDITATIONS </h1></center><br>
                           <aside v-for="meditation in user.meditations" class="widget widget-popular-post">
                                   <h3 class="widget-title text-uppercase text-center"></h3>
                                   <ul>
@@ -102,7 +102,7 @@
                             </form>
                        </aside> 
                       </div>
-                    </div>
+            </div>
         </div>
       </div>
     </div>
