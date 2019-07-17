@@ -15,15 +15,15 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                          aria-valuemax="300" style="width:100%">
-                      Army Combat Readiness Test (ACRT) 300{{user.acrt}}
+                      Army Combat Readiness Test (ACRT) 300 {{user.acrt}}
                     </div>
                   </div>
                 </div>
                 <div class="bar">
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                         aria-valuemax="40" style="width:90%">
-                      Range Qualification 36{{user.range_qualification}}
+                    <div class="progress-bar" role="progressbar" aria-valuenow="32" aria-valuemin="0"
+                         aria-valuemax="40" style="width:80%">
+                      Range Qualification 34 {{user.range_qualification}}
                     </div>
                   </div>
                 </div>

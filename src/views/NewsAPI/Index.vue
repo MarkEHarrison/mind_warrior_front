@@ -42,6 +42,44 @@
           </div>
         </div>
       </div>
+      <footer>
+        <div class="footer-widget-row">
+          <div class="footer-widget contact-widget">
+            <p>MWP is dedicated to helping you rank up and make the most of your career by infusing mental health into your personal care routine. 
+                    Increase intelligence, focus, and calm under chaos. 
+                    Meditate in Mindfulness Mode, store your favorites in My Hub, then jump into the News Room and stay current on all news that might affect where you're going next in the world.</p>
+            <div class="address">
+              <h4 class="text-uppercase">contact Info</h4>
+              <p> 123 America Blvd, USA</p>
+              <p> Phone: +123 456 78900</p>
+              <a href="mailto:mhworld11@icloud.com">mhworld11@icloud.com</a>
+            </div>
+          </div>
+          <div class="footer-widget twitter-widget">
+            <h2 class="widget-title text-uppercase">
+              Latest TWeeTs
+            </h2>
+            <div class="single-tweet">
+              <p>Check our new Twitter Page <br>
+                <a href="https://twitter.com/MindWarriorPro">https://twitter.com/MindWarriorPro</a></p>
+              <h4><i class="fa fa-twitter"></i>Tweeted on 17 hours ago</h4>
+            </div>
+          </div>
+          <div class="footer-widget social-widget">
+            <h2 class="widget-title text-uppercase">
+              Featured video
+            </h2>
+            <div class="footer-video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/v7KQsS2kLM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="text-center ft-copyright">
+          <p>&copy; 2017 <a href="">Kotha PRO </a> - Designed with <i class="fa fa-heart"></i> by <a
+            href="http://shapedtheme.com">ShapedTheme</a>
+          </p>
+        </div>
+      </footer>
     </div>
 
 

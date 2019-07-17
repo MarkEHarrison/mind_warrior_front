@@ -4,6 +4,14 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
+            <div class="blogFilter text-center text-uppercase">
+              <ul class="list-inline">
+                
+                <li><a href="#" data-filter=".design">Breath</a></li>
+                <li><a href="#" data-filter=".development">Sitting</a></li>
+                <li><a href="#" data-filter=".branding">Body Scan</a></li>
+              </ul>
+            </div>
             <div class="row">
               <div :key="meditation.id" v-for="meditation in meditations" class="col-md-4">
                 <article class="portfolio portfolio-2 post-grid">
