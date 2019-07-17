@@ -1,13 +1,24 @@
 <template>
   <div class="users-show">
+    <header>
+      <div id="img-header2">
+        <div class="container">
+          <div id="logo">
+            <h1>
+              MY HUB
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="kotha-default-content">
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
             <article class="single-blog">
               <div class="post-thumb">
-                <iframe src="https://open.spotify.com/embed/album/4Wv5UAieM1LDEYVq5WmqDd" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>-
-              </div><br>
+                <iframe src="https://open.spotify.com/embed/album/4Wv5UAieM1LDEYVq5WmqDd" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
             </article>
               <div class="our-skills">
                 <h3 class="bar-heading text-left">My Military Skills Scores</h3>
@@ -65,7 +76,7 @@
           </div>
           <div class="col-sm-4">
                       <div class="kotha-sidebar">
-                        <center><h1> MY MEDITATIONS </h1></center><br>
+                        <center><h1> FAVORITE MEDITATIONS </h1></center><br>
                           <aside v-for="meditation in user.meditations" class="widget widget-popular-post">
                                   <h3 class="widget-title text-uppercase text-center"></h3>
                                   <ul>

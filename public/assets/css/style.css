@@ -847,7 +847,7 @@ select:focus, select:active, input:focus, input:active, textarea:focus, textarea
 /*img header bg*/
 #img-header {
   min-height: 450px;
-  background: url(assets/images/header-fixed-bg.jpg) no-repeat scroll 100% 100%;
+  background: url(https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat scroll 100% 100%;
   background-attachment: fixed;
   -webkit-background-size: cover;
   background-size: cover;
@@ -869,6 +869,55 @@ select:focus, select:active, input:focus, input:active, textarea:focus, textarea
     padding: 30px 0;
     display: block; }
 
+#img-header1 {
+      min-height: 450px;
+      background: url(https://images.pexels.com/photos/268283/pexels-photo-268283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat scroll 100% 100%;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      background-size: cover;
+      position: relative;
+      z-index: 1; }
+      #img-header:after {
+        content: "";
+        background: rgba(0, 0, 0, 0.4);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1; }
+
+    .header-top-area {
+      margin: 45px auto 10px; }
+      .header-top-area .mega-logo {
+        padding: 30px 0;
+        display: block; }
+
+        #img-header2 {
+          min-height: 450px;
+          background: url(https://images.pexels.com/photos/414916/pexels-photo-414916.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500) no-repeat scroll 100% 100%;
+          background-attachment: fixed;
+          -webkit-background-size: cover;
+          background-size: cover;
+          position: relative;
+          z-index: 1; }
+          #img-header:after {
+            content: "";
+            background: rgba(0, 0, 0, 0.4);
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            z-index: -1; }
+
+        .header-top-area {
+          margin: 45px auto 10px; }
+          .header-top-area .mega-logo {
+            padding: 30px 0;
+            display: block; }
+
+            
 /*footer css*/
 .insta-feed {
   margin: 0;

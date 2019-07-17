@@ -1,6 +1,16 @@
 <template>
   <div class="articles-index">
-  <center><h1>News Room</h1></center>
+    <header>
+      <div id="img-header">
+        <div class="container">
+          <div id="logo">
+            <h1>
+              NEWS ROOM
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="kotha-default-content">
       <div class="container">
         <div class="row">

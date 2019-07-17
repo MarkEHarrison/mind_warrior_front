@@ -1,5 +1,16 @@
 <template>
   <div class="meditations-index">
+    <header>
+      <div id="img-header1">
+        <div class="container">
+          <div id="logo">
+            <h1>
+              MINDFULNESS MODE
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="kotha-default-content">
       <div class="container">
         <div class="row">
