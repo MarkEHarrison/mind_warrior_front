@@ -217,16 +217,16 @@ export default {
         this.$router.push("/");
       });
     },
-    playSound(sound) {
+    playSound(soundUrl) {
       if (!this.audio) {
-        this.audio = new Audio(sound);
+        this.audio = new Audio(soundUrl);
       }
-      if (this.audioPlay === false) {
+      if (this.playing !== soundUrl) {
         this.audio.play();
-        this.audioPlay = true;
+        this.playing = soundUrl;
       } else {
         this.audio.pause();
-        this.audioPlay = false;
+        this.playing = "";
       }
     },
 
