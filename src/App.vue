@@ -25,7 +25,7 @@
               </ul>
               <ul class="nav navbar-nav text-uppercase pull-left">
                 <li><router-link to="/">Home</router-link></li>
-                <li v-if="isLoggedIn()"><router-link to="/users/${user_id}">My Hub</router-link></li>
+                <li v-if="isLoggedIn()"><router-link :to="'/users/${user_id}'">My Hub</router-link></li>
                 <li><router-link to="/meditations">Mindfulness Mode</router-link></li>
                 <li><router-link to="/articles">News Room</router-link></li>
                 <li v-if="!isLoggedIn()"><router-link to="/signup">Signup</router-link></li>

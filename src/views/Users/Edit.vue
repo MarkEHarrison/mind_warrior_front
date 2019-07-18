@@ -33,13 +33,18 @@ export default {
   data: function() {
     return {
       user: {},
+      first_namee: "",
+      last_name: "",
+      email: "",
+      acrt: "",
+      range_qualification: "",
+      twelve_mile: "",
       meditations: [],
-
       errors: []
     };
   },
   created: function() {
-    axios.get("/api/users/1" ).then(response => {
+    axios.get("/api/users/" + this.$route.params.id).then(response => {
       console.log("user", response.data);
       this.user = response.data;
     });
@@ -49,7 +54,10 @@ export default {
       var params = {
         first_name: this.user.first_name,
         last_name: this.user.last_name,
-        email: this.user.email
+        email: this.user.email,
+        acrt: this.user.acrt,
+        range_qualification: this.user.range_qualification,
+        twelve_mile: this.user.twelve_mile
       };
 
       axios.patch("/api/users/" + this.$route.params.id, params).then(response => {
