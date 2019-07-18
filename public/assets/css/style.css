@@ -871,7 +871,7 @@ select:focus, select:active, input:focus, input:active, textarea:focus, textarea
 
 #img-header1 {
       min-height: 450px;
-      background: url(https://images.pexels.com/photos/268283/pexels-photo-268283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat scroll 100% 100%;
+      background: url(https://images.pexels.com/photos/289586/pexels-photo-289586.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500) no-repeat scroll 100% 100%;
       background-attachment: fixed;
       -webkit-background-size: cover;
       background-size: cover;
